@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blued</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 99vw;
+        height: 153vh;
+        position: relative;
+        background-color: #000;
+      }
+      .full-img {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 99vw;
+        height: auto;
+        transform: translateY(-50%);
+        object-fit: contain;
+        display: block;
+        margin: 0;
+        pointer-events: none;
+      }
+      .img-1 {
+        z-index: 1;
+      }
+      .img-2 {
+        z-index: 2;
+        mix-blend-mode: lighten;
+      }
+      .img-3 {
+        z-index: 3;
+      }
+      .img-4 {
+        z-index: 4;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <img
+      class="full-img img-1"
+      src="/public/images/star-bg.svg"
+      alt="star-bg"
+    />
+    <img
+      class="full-img img-2"
+      src="/public/images/samurai.svg"
+      alt="samurai"
+    />
+    <img 
+      class="full-img img-3"
+      src="/public/images/focus.svg"
+      alt="focus"
+    />
+    <img 
+      class="full-img img-4" 
+      src="/public/images/flames.svg" 
+      alt="flames" 
+    />
+
+  </body>
+</html>
